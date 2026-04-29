@@ -1,0 +1,104 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb-meta
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+.ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+.DS_Store?
+ehthumbs.db
+Icon?
+$RECYCLE.BIN/
+
+# Logs and databases - 但保留比赛相关的sqlite文件
+*.log
+# *.sqlite  # 不排除sqlite，因为比赛数据需要保留
+# *.db      # 不排除db文件
+
+# Model checkpoints and weights (Hugging Face, PyTorch, TensorFlow, Keras)
+/checkpoint-*/
+**/checkpoint-*/
+**/checkpoints/
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.h5
+*.keras
+*.onnx
+*.pb
+saved_model/
+model/
+models/
+
+# Large dataset files that are definitely too big
+*.tfrecord
+*.npz
+
+# Specific large training datasets (exclude these)
+*猫狗数据集.zip
+*archive.zip
+*wmt_zh_en_training_corpus.csv
+*europarl-v7.de-en.*
+*MNIST/raw/train-images-idx3-ubyte
+*MNIST/raw/t10k-images-idx3-ubyte
+
+# Large model weight files
+*decoder_weights.h5
+*encoder_weights.h5
+*lstm_functional_best.h5
+*gru_functional_best.h5
+*lstm_imdb_best.h5
+*muist训练模型.h5
+
+# Large presentation files
+*AI学习成果分享汇报.pptx
+
+# Course archive files
+*zihao_course-main.zip
+*helicopter-rl-master.zip
+
+# Large corpus files that exceed GitHub limits
+*data_10w.csv
+
+# TensorBoard logs (these can be regenerated)
+logs/
+runs/
+
+# Keep these files:
+# - 长风杯项目数据 (competition data)
+# - Cora数据集 (small graph dataset)
+# - MovieLens数据集 (small recommendation dataset)
+# - Tiny Shakespeare data (small text dataset)
+# - All .csv, .json, .txt files under 10MB
+# - All .pdf, .docx files (papers and documentation)

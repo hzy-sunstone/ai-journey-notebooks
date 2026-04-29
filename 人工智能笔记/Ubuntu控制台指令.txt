@@ -1,0 +1,13 @@
+conda activate ai
+~/start_jupyter.sh
+tensorboard --logdir=/home/hexiaoya/projects/ai_jupyter_notebook/11-深度学习-ResNet残差网络与BN批量归一化/logs/
+# 清理pip缓存
+pip cache purge
+------------------------------------------------------------------------------------------------
+%load_ext jupyter_ai_magics
+
+%%ai openai-chat:deepseek-reasoner
+
+
+
+pip freeze > requirements.txt

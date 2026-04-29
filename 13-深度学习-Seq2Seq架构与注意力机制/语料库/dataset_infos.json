@@ -1,0 +1,18 @@
+{
+    "default": {
+        "features": {
+            "0": {
+                "_type": "Value"
+            },
+            "1": {
+                "_type": "Value"
+            }
+        },
+        "splits": {
+            "train": {
+                "name": "train",
+                "dataset_name": "WMT-Chinese-to-English-Machine-Translation-Training-Corpus"
+            }
+        }
+    }
+}
